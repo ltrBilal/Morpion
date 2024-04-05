@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="home" prefHeight="690.0" prefWidth="930.0" stylesheets="@ressources.css/Main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.morpion.AccueilController">
+    <children>
+        <MenuBar layoutX="8.0" layoutY="8.0" prefHeight="26.0" prefWidth="906.0" style="-fx-background-color: #07C8F3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Home">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Home" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="About">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#help" text="Help" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button fx:id="btnStart" alignment="CENTER" layoutX="338.0" layoutY="485.0" mnemonicParsing="false" onAction="#startGame" prefHeight="56.0" prefWidth="253.0" stylesheets="@ressources.css/Main.css" text="Start">
+            <effect>
+                <ColorAdjust />
+            </effect>
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnQuit" alignment="CENTER" layoutX="338.0" layoutY="565.0" mnemonicParsing="false" onAction="#quitGame" prefHeight="56.0" prefWidth="253.0" stylesheets="@ressources.css/Main.css" text="Quit">
+            <font>
+                <Font size="19.0" />
+            </font>
+            <effect>
+                <ColorAdjust />
+            </effect>
+        </Button>
+        <ImageView fitHeight="369.0" fitWidth="421.0" layoutX="281.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@ressources.css/InShot_20230402_150149560.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

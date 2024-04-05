@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="930.0" stylesheets="@ressources.css/Main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.morpion.humanvshumanControler">
+   <children>
+      <VBox fx:id="monHbox" alignment="CENTER" layoutX="239.0" layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="262.0" prefWidth="423.0" spacing="10.0" stylesheets="@ressources.css/Main.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="34.0" prefWidth="600.0" spacing="30.0">
+               <children>
+                  <Label text="Joueur 1 " />
+                  <TextField fx:id="pseudo1" promptText="donner votre pseudo" text="palyer1" />
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="600.0" spacing="30.0">
+               <children>
+                  <Label text="Joueur 2 " />
+                  <TextField fx:id="pseudo2" promptText="donner votre pseudo" text="player2" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="31.0" prefWidth="397.0">
+               <children>
+                  <Label text="Qui joue en premier ??" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefWidth="397.0" spacing="80.0">
+               <children>
+                  <RadioButton fx:id="radioJoueur1" mnemonicParsing="false" text="Joueur1" />
+                  <RadioButton fx:id="radioJoueur2" mnemonicParsing="false" text="Joueur 2" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+      <MenuBar fx:id="menuBarreId" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="928.0" style="-fx-background-color: #07C8F3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Home">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Home" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="IA">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#setting" text="Setting" />
+                  <MenuItem mnemonicParsing="false" onAction="#model" text="Models" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#help" text="Help" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="btnStart" layoutX="541.0" layoutY="438.0" mnemonicParsing="false" onAction="#commencerJeux" prefHeight="46.0" prefWidth="106.0" text="Start" />
+      <Button fx:id="btnCancel" layoutX="245.0" layoutY="438.0" mnemonicParsing="false" onAction="#cancel" prefHeight="46.0" prefWidth="106.0" text="Cancel" />
+      <Button fx:id="btnQuit" layoutX="39.0" layoutY="599.0" mnemonicParsing="false" onAction="#exit" prefHeight="46.0" prefWidth="106.0" text="Quit" />
+   </children>
+</AnchorPane>
