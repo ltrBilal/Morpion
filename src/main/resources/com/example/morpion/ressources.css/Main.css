@@ -1,0 +1,142 @@
+
+
+#home{
+	-fx-background-image : url("ground.jpg");
+	-fx-background-size: 1150;
+}
+#header{
+	-fx-background-color: #04CBF9;
+}
+
+#pBarre, #pBarreLabel{
+	 display: none;
+}
+
+.button {
+	-fx-font-size: 18px;
+	-fx-text-fill: white;
+	-fx-font-size: 22px;
+	-fx-font-weight: bold;
+}
+
+#monHbox{
+       -fx-background-color: #04CBF9;
+       -fx-text-fill: white;
+} 
+
+#btnStart:hover, #btnApply:hover{
+	-fx-background-color: #00ff00;
+	-fx-text-fill: white;
+	-fx-font-size: 22px;
+}
+#btnStart, #btnApply, #btnDelete{
+        -fx-background-color: white;
+	-fx-text-fill: black;
+	-fx-font-size: 22px;
+}
+
+#btnQuit:hover, #btnCancel:hover{
+	-fx-background-color: #ff0000;
+	-fx-text-fill: white;
+	-fx-font-size: 22px;
+}
+#btnQuit, #btnCancel{
+    -fx-background-color: white;
+	-fx-text-fill: black;
+	-fx-font-size: 22px;
+}
+
+#btnHistoric{
+        -fx-background-color: white;
+	-fx-text-fill: black;
+	-fx-font-size: 22px;
+}
+
+#btnHistoric:hover{
+	-fx-background-color: grey;
+	-fx-text-fill: white;
+	-fx-font-size: 22px;
+}
+
+#btnOrdinateur:hover, #btnHumain:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+#btnOrdinateur, #btnHumain{
+	-fx-background-color: #04CBF9;
+	-fx-text-fill: white;
+	-fx-font-size: 22px;
+	-fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+}
+#hboxNames{
+	-fx-background-color: #04CBF9;
+}
+
+#btnBack{
+        -fx-background-color: white;
+	-fx-text-fill: black;
+	-fx-font-size: 22px;
+}
+
+#tictactoe{
+	-fx-font-size: 60px;
+	-fx-text-fill: #ff0000;
+	-fx-font-weight: bold;
+}
+#btnQuitter,#btnQuitter2{
+	-fx-background-image: url("com/example/ressources.css/button_cancel.png");
+    -fx-background-size: 25 25;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:bottom 10px right 210px; 
+}
+#btnCommencer{
+	-fx-background-image: url("com/example/ressources.css/apply.png");
+    -fx-background-size: 25 25;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:left; 
+}
+#btnJouerSeul{
+    -fx-background-size: 45 60;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:left; 
+}
+#btnJouerAmi{
+    -fx-background-size: 35 40;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:bottom 2px right 210px;
+}
+#symbole1,#symbole2,#score1,#score2{
+	-fx-background-color :  #FF69B4;
+	-fx-text-fill: white;
+	-fx-font-size: 17px;
+	-fx-font-weight: bold;
+}
+#signe2{
+	-fx-text-fill: red;
+	-fx-font-size: 17px;
+	-fx-font-weight: bold;
+}
+#signe1{
+	-fx-text-fill: green;
+	-fx-font-size: 17px;
+	-fx-font-weight: bold;
+}
+#bouton1,#bouton2,#bouton3,#bouton4,#bouton5,#bouton6,#bouton7,#bouton8,#bouton9{
+	-fx-background-color : white;
+	-fx-pref-height: 00px;
+    -fx-pref-width: 100px;
+    -fx-text-fill: red;
+}
+#btnReprendre{
+	-fx-font-size: 12px;
+	-fx-font-size: 15px;
+	-fx-font-weight: none;
+}
+#suppModele{
+	-fx-font-size: 16px;
+}
+#listModels{
+	-fx-font-size: 17px;
+}
